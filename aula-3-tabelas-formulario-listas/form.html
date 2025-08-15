@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+</head>
+
+<body>
+
+    <!-- Isso não é legal :( -->
+    <input type="text" placeholder="Nome fora da tag form" required />
+    <hr />
+
+    <form>
+        <label for="inputNome">Nome</label><br />
+        <input id="inputNome" type="text" placeholder="Seu nome aqui..." required /> <br /><br />
+        <label for="inputTel">Telefone</label>
+        <input id="inputTel" type="tel" placeholder="(00) 00000-0000" /><br /><br />
+        <label for="inputIdade">Idade</label>
+        <input id="inputIdade" type="number" placeholder="000" value="44" max="120" /><br /><br />
+        <label for="inputEmail">E-mail</label>
+        <input id="inputEmail" type="email" placeholder="seu.email@provedor.com" /><br /><br />
+
+
+        <!-- 
+            Conteúdo extra, validações no HTML
+        -->
+        <input type="text" placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" /><br /><br />
+
+        <!-- <input type="submit" />
+        <input type="reset" />
+        <input type="button" value="Ação" /> -->
+        
+        <!-- button sem atributo assume type="submit" -->
+        <button>Enviar</button> 
+        <button type="reset">Limpar</button>
+        <button type="button">Ação Qualquer</button>
+    </form>
+</body>
+</html>
