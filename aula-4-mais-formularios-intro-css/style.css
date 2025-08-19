@@ -1,0 +1,35 @@
+p {
+    color: brown;
+}
+
+.principal {
+    background: grey;
+    font-size: 20px;
+}
+
+button {
+    background: blue;
+    color: white;
+    border: none;
+}
+
+.principal button {
+    background: purple;
+}  
+
+.principal button span {
+    text-decoration: underline;
+}  
+
+#paragrafoEspecifico {
+    color: white;
+}
+
+/* 
+
+    Tipos de seletores:
+    seletores de tag (p, h1, a, div...)
+    seletores de classe (.nomeDoAtributoClasse)
+    seletor de id (#nomeDoAtributoId)
+
+*/

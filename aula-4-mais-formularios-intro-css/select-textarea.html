@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 - Formulários parte 2</title>
+</head>
+<body>
+
+    <h1>Mais inputs</h1>
+    <form>
+        <label for="frutas">Frutas</label>
+        <select name="frutas" id="frutas">
+            <option disabled>Selecione uma fruta</option>
+            <option value="1">Amora</option>
+            <option value="2" selected>Banana</option>
+            <option value="3" >Caqui</option>
+        </select>
+
+        <br />
+
+        <label for="produtos">Produtos</label>
+        <select name="produtos" id="produtos">
+            <optgroup label="Frutas">
+                <option value="1">Amora</option>
+                <option value="2">Banana</option>
+                <option value="3" >Caqui</option>
+            </optgroup>
+
+            <optgroup label="Leite (Derivados)">
+                <option value="4">Queijo</option>
+                <option value="5">Leite</option>
+                <option value="6" >Maionese</option>
+            </optgroup>
+        </select>
+
+        <hr />
+
+        <textarea placeholder="Escreva aqui sua mensagem..." cols="30" rows="10" maxlength="5">Essa mensagem é padrão!!!</textarea>
+
+        <br/>
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
