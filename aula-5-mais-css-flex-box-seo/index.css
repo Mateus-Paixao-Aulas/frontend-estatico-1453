@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    padding-top: 0;
+}
+
+header, nav, aside, main, footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    background-color: tomato;
+    margin-top: 10px;
+    /* declaração curta margin (box model) */
+    /* margin: 10px 15px 20px 150px; */
+    /* margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 50px; */
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+header {
+    background-color: #f87890;
+}
+
+nav {
+    background-color: #48e1a8;
+}
+
+footer {
+    background-color: #ba80ff;
+}
+
+.conteudo {
+    display: flex;
+    gap: 10px;
+}
+
+aside {
+    background-color: #fad0d6;
+    width: 40%;
+}
+
+main {
+   background-color: #caedff;  
+   width: 60%;
+   height: 300px;
+
+   display: flex;
+   justify-content: center;
+}
+
+/* clear fix */
+/* .conteudo {
+    overflow: hidden;
+}
+
+aside {
+    background-color: #fad0d6;
+    height: 300px;
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+} */
+
+/* main { */
+    /* TODO: responsividade */
+    /* width: 360px; quebraria em telas maiores */
+    /* somando o width e margin do aside */
+    /* width: calc(100% - 160px);
+    background-color: #caedff;
+    height: 300px;
+    float: left;
+    padding: 10px; */
+/* } */
