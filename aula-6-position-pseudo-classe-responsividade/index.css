@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    padding-top: 0;
+}
+
+header, nav, aside, main, footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    background-color: tomato;
+    margin-top: 10px;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header {
+    background-color: #f87890;
+}
+
+nav {
+    background-color: #48e1a8;
+}
+
+footer {
+    background-color: #ba80ff;
+}
+
+.conteudo {
+    display: flex;
+    gap: 10px;
+}
+
+aside {
+    background-color: #fad0d6;
+    width: 40%;
+}
+
+main {
+   background-color: #caedff;  
+   width: 60%;
+   height: 300px;
+
+   display: flex;
+   justify-content: center;
+}
+
+
+/* Aula 6 */
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding: 5px;
+    position: relative;
+}
+
+/* :has(elemento que esta dentro dele) */
+.menu li:has(ul)::after {
+    content: '˅';
+    margin-left: 2px;
+    color: #fff;
+    /* 
+        outras regras css
+    */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.menu li ul {
+    display: none;
+    background-color: #48e1a8;
+    position: absolute;
+    top: 37px;
+    z-index: 1;
+    
+    /* 
+    o position absolute também libera 
+    essas propriedade além do top e z-index
+       bottom: 0px;
+       left: 0px;
+       right: 0px; 
+    
+    */
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+@media (max-width: 320px) {
+    .menu, .conteudo { 
+        flex-direction: column;
+    }
+
+    aside, main {
+        width: 100%;
+    }
+
+    main {
+        /* o flex box, os elementos filhos, por padrão possuem order: 0 */
+        order: -1;
+    }
+}
+
+/* Media queries comuns */
+
+/* 320px — 480px: dispositivos móveis */
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Seu código aqui.. */
+}
+
+/* 481px — 768px: iPads, tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Seu código aqui.. */
+}
+
+/* 769px — 1024px: telas pequenas, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Seu código aqui.. */
+}
+
+/* 
+1025px — 1200px: desktops, telas grandes
+1201px e acima —  telas muito grandes, TVs */
